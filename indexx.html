@@ -17,7 +17,7 @@
     <div class="line">
     </div>
     <div class="pic">
-      <img src="http://i.pravatar.cc/80">
+      <img src="http://i.pravatar.cc/80" alt = "">
     </div>
     <div class="name">
       <p>Mayank Munjal</p>
@@ -43,7 +43,14 @@
        <p><strong>Alert</strong></p>
        <p class="nullam">Nullam quis risus eget urna mollis ornare cel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor.
        </p>
-       <p><strong>X</strong></p>
+       <p><strong class="X">X</strong></p>
+     </div>
+     <div class="nav-2">
+       <p class="trfc">TRAFFIC</p>
+       <p>Hourly</p>
+       <p>Monthly</p>
+       <p>Daily</p>
+       <p>weekly</p>
      </div>
      <div class="lineChart">
        <canvas id ="lineChart" width="500" height="500"></canvas>
@@ -121,7 +128,7 @@
       <div class="nm">
         <h2> NEW MEMBERS</h2>
         <div class="new-members">
-          <img src="http://i.pravatar.cc/60">
+          <img src="http://i.pravatar.cc/60" alt ="">
           <div class="members">
             <h5>Victoria Chambers</h5>
             <a href="#"><p>victoria.chambers80@example.com</p></a>
@@ -129,7 +136,7 @@
           <p>10/15/15</p>
         </div>
         <div class="new-members">
-          <img src="http://i.pravatar.cc/50">
+          <img src="http://i.pravatar.cc/50" alt ="">
           <div class="members">
             <h5>Dale Byrd</h5>
             <a href="#"><p>dale.byrd52@example.com</p></a>
@@ -137,7 +144,7 @@
           <p>10/15/15</p>
         </div>
         <div class="new-members">
-          <img src="http://i.pravatar.cc/100">
+          <img src="http://i.pravatar.cc/100" alt ="">
           <div class="members">
             <h5>Dawn Wood</h5>
             <a href="#"><p>dawn.wood16@example.com</p></a>
@@ -145,7 +152,7 @@
           <p>10/15/15</p>
         </div>
         <div class="new-members last">
-          <img src="http://i.pravatar.cc/30">
+          <img src="http://i.pravatar.cc/30" alt ="">
           <div class="members">
             <h5>Dan Oliver</h5>
             <a href="#"><p>dan.oliver82@example.com</p></a>
@@ -156,7 +163,7 @@
       <div class="ra">
         <h2> RECENT ACTIVITY </h2>
         <div class="recent-activity">
-         <img src="http://i.pravatar.cc/60">
+         <img src="http://i.pravatar.cc/60" alt ="">
          <div class="activity">
            <p>Victoria Chambers commented on YourApp's SEO tips</p>
            <p>4 hours ago</p>
@@ -164,7 +171,7 @@
          <h1>></h1>
         </div>
         <div class="recent-activity">
-         <img src="http://i.pravatar.cc/50">
+         <img src="http://i.pravatar.cc/50" alt ="">
          <div class="activity">
            <p>Dale Byrd like the post Facebook's changes for 2016</p>
            <p>5 hours ago</p>
@@ -172,7 +179,7 @@
          <h1>></h1>
         </div>
         <div class="recent-activity">
-         <img src="http://i.pravatar.cc/100">
+         <img src="http://i.pravatar.cc/100" alt ="">
            <div class="activity">
              <p>Dawn Wood commented on Facebook's Chnages for 2016</p>
              <p>5 hours ago</p>
@@ -180,7 +187,7 @@
          <h1>></h1>
         </div>
         <div class="recent-activity last">
-         <img src="http://i.pravatar.cc/30">
+         <img src="http://i.pravatar.cc/30" alt ="">
          <div class="activity">
            <p>Dan Oliver posted YourApp's SEO tips</p>
            <p>1 day ago</p>
@@ -192,9 +199,9 @@
     <div class="footer">
          <div class="msg">
            <h2>MESSAGE USER</h2>
-           <div class= "search-bar"><input placeholder="Search for User"></div>
+           <div class= "search-bar"><input class="src-bar" placeholder="Search for User"></div>
            <div class= "message-bar"><input class="msg-bar" placeholder="Message for User"></div>
-           <div class= "btn-bar"><button>Send</button></div>
+           <div class= "btn-bar"><button class="btn-a">Send</button></div>
          </div>
          <div class="buttons">
            <h2>SETTINGS</h2>
@@ -206,7 +213,91 @@
              <p>Set Profile to Public</p>
              <button><span></span>OFF</button>
            </div>
-           <div class="timezone"><input placeholder="Select Timezone"></div>
+           <div class="timezone"><select class="settings__timezone">
+                            <option id="default" value="" disabled selected>Select Timezone</option>
+                            <option>(GMT-12:00) International Date Line West</option>
+                            <option>(GMT-11:00) Midway Island, Samoa</option>
+                            <option>(GMT-10:00) Hawaii</option>
+                            <option>(GMT-09:00) Alaska</option>
+                            <option>(GMT-08:00) Pacific Time (US & Canada)</option>
+                            <option>(GMT-08:00) Tijuana, Baja California</option>
+                            <option>(GMT-07:00) Arizona</option>
+                            <option>(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+                            <option>(GMT-07:00) Mountain Time (US & Canada)</option>
+                            <option>(GMT-06:00) Central America</option>
+                            <option>(GMT-06:00) Central Time (US & Canada)</option>
+                            <option>(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+                            <option>(GMT-06:00) Saskatchewan</option>
+                            <option>(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+                            <option>(GMT-05:00) Eastern Time (US & Canada)</option>
+                            <option>(GMT-05:00) Indiana (East)</option>
+                            <option>(GMT-04:00) Atlantic Time (Canada)</option>
+                            <option>(GMT-04:00) Caracas, La Paz</option>
+                            <option>(GMT-04:00) Manaus</option>
+                            <option>(GMT-04:00) Santiago</option>
+                            <option>(GMT-03:30) Newfoundland</option>
+                            <option>(GMT-03:00) Brasilia</option>
+                            <option>(GMT-03:00) Buenos Aires, Georgetown</option>
+                            <option>(GMT-03:00) Greenland</option>
+                            <option>(GMT-03:00) Montevideo</option>
+                            <option>(GMT-02:00) Mid-Atlantic</option>
+                            <option>(GMT-01:00) Cape Verde Is.</option>
+                            <option>(GMT-01:00) Azores</option>
+                            <option>(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
+                            <option>(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
+                            <option>(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+                            <option>(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+                            <option>(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+                            <option>(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+                            <option>(GMT+01:00) West Central Africa</option>
+                            <option>(GMT+02:00) Amman</option>
+                            <option>(GMT+02:00) Athens, Bucharest, Istanbul</option>
+                            <option>(GMT+02:00) Beirut</option>
+                            <option>(GMT+02:00) Cairo</option>
+                            <option>(GMT+02:00) Harare, Pretoria</option>
+                            <option>(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
+                            <option>(GMT+02:00) Jerusalem</option>
+                            <option>(GMT+02:00) Minsk</option>
+                            <option>(GMT+02:00) Windhoek</option>
+                            <option>(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
+                            <option>(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+                            <option>(GMT+03:00) Nairobi</option>
+                            <option>(GMT+03:00) Tbilisi</option>
+                            <option>(GMT+03:30) Tehran</option>
+                            <option>(GMT+04:00) Abu Dhabi, Muscat</option>
+                            <option>(GMT+04:00) Baku</option>
+                            <option>(GMT+04:00) Yerevan</option>
+                            <option>(GMT+04:30) Kabul</option>
+                            <option>(GMT+05:00) Yekaterinburg</option>
+                            <option>(GMT+05:00) Islamabad, Karachi, Tashkent</option>
+                            <option>(GMT+05:30) Sri Jayawardenapura</option>
+                            <option>(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+                            <option>(GMT+05:45) Kathmandu</option>
+                            <option>(GMT+06:00) Almaty, Novosibirsk</option>
+                            <option>(GMT+06:00) Astana, Dhaka</option>
+                            <option>(GMT+06:30) Yangon (Rangoon)</option>
+                            <option>(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+                            <option>(GMT+07:00) Krasnoyarsk</option>
+                            <option>(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+                            <option>(GMT+08:00) Kuala Lumpur, Singapore</option>
+                            <option>(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+                            <option>(GMT+08:00) Perth</option>
+                            <option>(GMT+08:00) Taipei</option>
+                            <option>(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+                            <option>(GMT+09:00) Seoul</option>
+                            <option>(GMT+09:00) Yakutsk</option>
+                            <option>(GMT+09:30) Adelaide</option>
+                            <option>(GMT+09:30) Darwin</option>
+                            <option>(GMT+10:00) Brisbane</option>
+                            <option>(GMT+10:00) Canberra, Melbourne, Sydney</option>
+                            <option>(GMT+10:00) Hobart</option>
+                            <option>(GMT+10:00) Guam, Port Moresby</option>
+                            <option>(GMT+10:00) Vladivostok</option>
+                            <option>(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
+                            <option>(GMT+12:00) Auckland, Wellington</option>
+                            <option>(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+                            <option>(GMT+13:00) Nuku'alofa</option>
+                        </select></div>
            <div class="button-3">
              <button>SAVE</button>
              <button>CANCEL</button>
@@ -218,5 +309,6 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+<script src="jquery.js"></script>
 <script src="app.js"></script>
 </body>

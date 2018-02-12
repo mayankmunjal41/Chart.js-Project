@@ -1,3 +1,17 @@
+var src = document.querySelector('.src-bar');
+var msg = document.querySelector('.msg-bar');
+var buttonA = document.querySelector('.btn-a');
+
+
+
+  buttonA.addEventListener('click', function() {
+    if (src.value == "" || msg.value == "") {
+      alert("Please select user and type in message!");
+    } else {
+      alert("Submitted");
+    }
+});
+
 var ctx = document.getElementById("lineChart");
 var myChart = new Chart(ctx, {
     type: 'line',
@@ -95,3 +109,25 @@ var myChart = new Chart(ctx, {
          },
      }
 });
+
+var x = document.querySelector('.X');
+var alert = document.querySelector('.alert');
+x.addEventListener('click', function() {
+  alert.style.display = 'none';
+})
+
+$('.button-2 span').click(function() {
+
+    $('.button-2 button').text('ON').append("<span></span>");
+    $('.button-2 span').css("left", "60%");
+    $('.button-2 button').css("padding", "10px 20px 10px 10px");
+    $('.button-2 button').css("background-color", "#65619E");
+})
+
+$('.button-1 span').click(function() {
+
+    $('.button-1 button').text('ON').append("<span></span>");
+    $('.button-1 span').css("left", "60%");
+    $('.button-1 button').css("padding", "10px 20px 10px 10px");
+    $('.button-1 button').css("background-color", "#65619E");
+})
