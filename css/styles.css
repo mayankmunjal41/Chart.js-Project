@@ -5,18 +5,31 @@ body {
   box-sizing: border-box;
 }
 
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
 /* HEADER */
 
 .header {
   display: flex;
   background-color: #65619E;
-  justify-content: space-between;
   height: 75px;
 }
 
 .line {
   border-left: 1px solid grey;
   height: 35px;
+}
+
+.circ {
+  width: 5px;
+  height: 5px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  margin-top: 25px;
+  margin-left: -7px;
 }
 
 .bell, .pic, .name, .line {
@@ -47,15 +60,13 @@ h1, .name p {
 
 /* VERTICAL NAVIGATION AND CHARTS*/
 
-.body {
-  display: flex;
-}
+
 
 .vert-nav {
   display: flex;
   background-color: #564483;
-  flex-direction: column;
-  width: 5vw;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .item {
@@ -76,7 +87,6 @@ h1, .name p {
 
 .main-content {
   display: flex;
-  width: 95vw;
   flex-direction: column;
 }
 
@@ -153,15 +163,27 @@ h1, .name p {
 /* CHARTS */
 
 .charts {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-around;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
+  display: block;
+  margin: 0;
+  margin: 20px;
+
+}
+
+
+
+.d-chart, .b-chart {
+  border: 1px solid grey;
 }
 
 .b-chart {
-  border-right:  1px solid lightgrey;
+  padding: 20px;
+}
+
+.d-chart {
+  padding: 20px;
+  margin-top: 20px;
 }
 
 
@@ -186,6 +208,7 @@ h4 {
   border-radius: 5%;
   background-color: #f4f2f2;
   padding: 40px 70px;
+  margin: 20px;
 }
 
 
@@ -288,6 +311,7 @@ svg {
 
 .recent-activity {
   display: flex;
+  padding-right: 0;
 }
 
 .activity {
@@ -295,21 +319,16 @@ svg {
 }
 
 .final-layout {
-  display: flex;
-
-  justify-content: space-between;
+  display: block;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
 }
 
 
 .nm, .ra {
-  width: 50%;
-  padding: 30px;
-}
-
-.nm {
-  border-right: 1px solid lightgrey;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid grey;
 }
 
 
@@ -363,18 +382,20 @@ sup {
 }
 
 .footer {
-  display: flex;
-  margin-bottom: 30px;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .msg, .buttons {
-  width: 50%;
+  border: 1px solid grey;
+  margin: 20px;
 }
 
-.msg {
-  border-right: 1px solid lightgrey;
-  margin-top: 0;
+.buttons {
+  margin-top: 30px;
 }
+
+
 
 .button-1, .button-2 {
   display: flex;
@@ -465,69 +486,75 @@ button {
   left: 80%;
 } */
 
-@media only screen and (max-width: 768px) {
 
- .body {
-   flex-direction: column;
- }
+
+@media only screen and (min-width: 768px) {
+
+  .body {
+    flex-direction: row;
+  }
 
   .vert-nav {
-    width: 100vw;
-    height: 7vh;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 5%;
+  }
+
+  .main-content {
+    width: 95%;
   }
 
   .charts {
-    display: block;
-    margin: 0;
-    margin: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
   }
 
   .d-chart, .b-chart {
-    border: 1px solid grey;
+    border: none;
   }
 
   .b-chart {
-    padding: 20px;
+    border-right:  1px solid lightgrey;
   }
 
   .d-chart {
-    padding: 20px;
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .twitter, .facebook, .google {
-    margin: 20px;
-
+    margin: 0;
   }
 
   .final-layout {
-    display: block;
+    display: flex;
   }
 
   .nm, .ra {
-    width: 100vw;
+    width: 50%;
+    padding-right: 0;
+    border: none;
     margin: 0;
-    padding: 0;
-    border: 1px solid grey;
+    padding-right: 0;
   }
 
-  .ra {
-    margin: 30px 0;
+  .nm {
+    border-right: 1px solid lightgrey;
   }
 
   .footer {
-    display: block;
+    display: flex;
+    margin-bottom: 0;
   }
 
   .msg, .buttons {
-    width: 100vw;
-    border: 1px solid grey;
+    width: 50%;
+    border: none;
+    margin: 0;
   }
 
-  .buttons {
-    margin-top: 30px;
+  .msg {
+    border-right: 1px solid lightgrey;
   }
 
 
