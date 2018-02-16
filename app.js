@@ -6,9 +6,9 @@ var buttonA = document.querySelector('.btn-a');
 
   buttonA.addEventListener('click', function() {
     if (src.value == "" || msg.value == "") {
-      alert("Please select user and type in message!");
+      src.value = "Please select user and type in message!";
     } else {
-      alert("Submitted");
+      msg.value = "Submitted!";
     }
 });
 
@@ -116,18 +116,40 @@ x.addEventListener('click', function() {
   alert.style.display = 'none';
 })
 
-$('.button-2 span').click(function() {
 
+var $button2On = false;
+
+
+$('.button-2').click(function() {
+  if ($button2On === false) {
     $('.button-2 button').text('ON').append("<span></span>");
     $('.button-2 span').css("left", "60%");
     $('.button-2 button').css("padding", "10px 20px 10px 10px");
     $('.button-2 button').css("background-color", "#65619E");
+    $button2On = true;
+  } else if ($button2On === true) {
+    $('.button-2 button').text('OFF').append("<span></span>");
+    $('.button-2 span').css("right", "45%");
+    $('.button-2 button').css("padding", "10px 10px 10px 20px");
+    $('.button-2 button').css("background-color", "grey");
+    $button2On = false;
+  }
 })
 
-$('.button-1 span').click(function() {
+var $button1On = false;
 
+$('.button-1').click(function() {
+  if ($button1On === false) {
     $('.button-1 button').text('ON').append("<span></span>");
     $('.button-1 span').css("left", "60%");
     $('.button-1 button').css("padding", "10px 20px 10px 10px");
     $('.button-1 button').css("background-color", "#65619E");
+    $button1On = true;
+  } else if ($button1On === true) {
+    $('.button-1 button').text('OFF').append("<span></span>");
+    $('.button-1 span').css("right", "45%");
+    $('.button-1 button').css("padding", "10px 10px 10px 20px");
+    $('.button-1 button').css("background-color", "grey");
+    $button1On = false;
+  }
 })
